@@ -54,7 +54,7 @@ COMMAND | CONVERSION
 `openssl x509 -inform der -in cert.der -out cert.pem` | DER to PEM
 `openssl pkcs12 -in cert.pfx -out cert.pem -nodes` | PFX to PEM
 `rename cert.pem to cert.crt` | CRT
-`openssl pkey -in foo.pem -out foo.key` | KEY
+`openssl pkey -in cert-key.pem -out cert.key` | KEY
 
 ## Verify Certificates
 `openssl verify -CAfile ca.pem -verbose cert.pem`
